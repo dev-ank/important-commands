@@ -1,0 +1,79 @@
+Bash Commands for windows
+
+
+cd 
+brings you to root directory
+
+pwd
+shows path to your present working directory
+
+cd ..
+goes one directory back
+
+*use pathname in single quotes if they have spaces
+
+~ sign is for root directory
+
+
+ls 
+list all the contents of a folder
+
+mkdir dir_name
+creates a directory
+
+ls -l
+shows detailed ls
+
+ls -a
+shows .files
+
+whoami
+shows the name of current user
+
+which python
+shows the python path 
+
+rm -r dir_name
+delete directory and its content recursively
+
+
+touch file_name
+creates a new file
+
+history
+gives the previous list of commands
+
+history > file_name
+copies the command history to a file
+
+cat file_name
+shows the contents of the file
+
+vim file_name
+open file in vim editor
+
+
+file permissions are in order:
+owner group users
+r-read
+w-write
+x-execute
+- means file
+d means directory
+
+example: drwxr--r--
+
+change permissions
+chmod 777 file_name
+
+where 777 means -rwxrwxrwx
+
+x is 1
+w is 2
+r is 4
+
+
+clear
+clears the screen
+
+

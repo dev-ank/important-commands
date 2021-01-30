@@ -1,0 +1,39 @@
+this is for venv ...  shell used is Git bash and OS is Windows.
+
+
+Create a virtual env:
+python -m venv name_of_vir_env
+
+
+activate virtual env:
+source name_of_vir_env/Scripts/activate
+
+
+install modules in virtual_env:
+pip install module_name
+
+
+list all the local modules:
+pip freeze
+
+
+create requirements file:
+pip freeze > requirements.txt
+
+
+get all the global modules in virtual env:
+python -m venv name_of_vir_env --system-site-packages
+
+
+deactivate virtual env:
+deactivate
+
+delete virtual env:
+rm -r name_of_vir_env
+
+
+copy contents of another requirements file:
+pip install -r requirements.txt
+
+
+

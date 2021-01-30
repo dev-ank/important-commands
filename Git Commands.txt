@@ -1,0 +1,65 @@
+
+
+
+Git Commands:
+
+1.For initial setup/configuration:
+  git config --global user.name "user name"  sets the user name
+  git config --global user.email "user email" sets the user email
+
+2.For starting git in a folder:
+  git init               Initializes git in that particular repository
+
+3.For tracking files:
+  git status             tells the current status of the repository untracked/staged/commited
+  git add --a/ git add .            adds all the files from untracked to staging area
+  git commit -m "your message"    commits all the staged files  (log is created)
+  git log                shows the log of the commit
+
+4.Delete a git repository:
+  rm -rf .git             removes git from the particular repository
+
+5.Cloning from a remote repository:
+  git clone "remote link of repository"    clones from a remote repository to your local machine
+
+6.Ignoring files/directories to be tracked:
+  touch .gitignore     creates a .gitignore file 
+  put the names of files inside all those files and folder which needs to be ignored
+
+7.differentiate b/w working dir and staging area:
+  git diff   shows suppose if a file have been staged and you modified it without commiting it.. So there are two instances of the same file
+  git diff --stage  compares previous commits with current staging area 
+   
+8.Skipping the staging area:
+ git commit -a -m "message"   adds all the tracked file to commit, untracked files remain as it is
+
+9.Remove/rename a file:
+  git rm file.extension                  delete   file automatically gets staged
+  git mv curr.ext renamed.extension      rename
+
+10.Untrack a file
+  got rm --cached filename.ext  stops tracking a file(used when we add a tracking file to gitignore.. so we want that file to be untracked)
+
+11. Track History
+   git log -p   gives exact details which line is removed which is not
+   git log -p -3   for 3 files
+   git log --stat  short summary
+   git log --pretty=oneline    if you want one line commits details (used to print all the commits)
+   git log since=2.days
+   git log --pretty=format:"%h--%ae"
+
+12. Unstage a file
+   git restore --staged filename.txt    convert from staged to untrack
+   git checkout -- filename.txt         coverts the file to prev commit(used if deleted some lines in file by mistake)
+   git checkout -f  for all the files
+   
+
+13. Adding file to remote(github):
+   git remote add origin git@github.com:usrname/repository_name.git
+   got remote -v    shows push n pull urls
+   git remote remove origin    removes the remote
+   git push -u origin master   pushes git to remote
+
+
+14.Setting Aliases
+   git config --global 

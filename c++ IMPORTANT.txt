@@ -1,0 +1,21 @@
+C++ File build process:(Source code to executable file)
+
+Source code[test.cpp]->preprossesor->[test.ii]->Compiler->[test.s]->Assembler->[test.o]->Linker->[test.exe]->Loader->Load File in Ram->Execution
+
+
+Commands for compilation/linking/execution through CLI:
+
+One liner for whole file build process:
+
+g++ test.cpp  // compilation done and a.exe file will be created
+./a.exe    // executing and output is shown         ./ is for PWD
+
+
+Each step from compiling to assembling and linking:
+
+g++ -S test.cpp  // Compilation done only, test.s file will be created after compilation and it contains intermediate code
+
+g++ -c test.cpp  // Asembling done only, test.o file will be created will be in proper machine code
+
+g++ -o test.exe test.cpp  // Linking test.o files and library code to convert into executable file. test.exe file will be created
+

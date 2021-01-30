@@ -1,0 +1,32 @@
+virtual env conda... shell used is git Bash and OS is windows
+
+
+conda create --name name_of_venv python   (either python or atleast 1 module compulsory)
+creates a virtual env
+
+
+
+conda activate name_of_venv
+activate virtual env
+
+
+
+conda deactivate
+deactivates the virtual env
+
+
+
+conda remove --name name_of_env -all
+deletes the virtual env
+
+
+
+conda env list
+list all the virtual env
+
+
+
+conda install modulename
+installs a module inthe local env
+
+
